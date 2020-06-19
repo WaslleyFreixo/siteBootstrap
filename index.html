@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>Waslley Freixo</title>
+    <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!--Scripts-->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc9892dcaf.js" crossorigin="anonymous"></script>
+    <!--Progress Bar-->
+    <script src="progressbar.min.js"></script>
+    <!--Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container" id="na-container">
+         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <a href="#" class="navbar-brand">
+              <img id="logo" src="img/logo.png" alt="waslleyfreixologo"> Waslley Freixo
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+            aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="home-menu">Home</a>
+                    <a class="nav-item nav-link" id="about-menu">Sobre</a>
+                    <a class="nav-item nav-link" id="services-menu">Serviços</a>
+                    <a class="nav-item nav-link" id="team-menu">Time</a>
+                    <a class="nav-item nav-link" id="portfolio-menu">Trabalhos</a>
+                    <a class="nav-item nav-link" id="contact-menu">Contato</a>
+                </div>   
+            </div>
+         </nav>  
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <!-- corrossel-->
+            <div id="mainSlider" class="carousel slide" data-ride='carousel'>
+              <ol class="carousel-indicators">
+                 <li data-target='#mainSlider' data-slide-to='0' class='active'></li>
+                 <li data-target='#mainSlider' data-slide-to='1'></li> 
+                 <li data-target='#mainSlider' data-slide-to='2'></li>  
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="img/banner1.png" class='d-block w-100' alt="Projeto de e-commerce">
+                      <div class="carousel-caption d-md-block">
+                          <h2>Quer criar um e-commerce?</h2>
+                          <p>Conte conosco, temos mais de 30 lojas no nosso portifólio.</p>
+                          <a href="#" class="main-btn">Ver portfólio</a>
+                      </div>  
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/banner2.png" class='d-block w-100' alt="Engenharia de software">
+                    <div class="carousel-caption  d-md-block">
+                        <h2>Está querendo tirar o projeto do papel?</h2>
+                        <p>Nossa equipe de engenharia de softaware está pronta para lhe atender.</p>
+                        <a href="#" class="main-btn">Entre em contato</a>
+                    </div>  
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.png" class='d-block w-100' alt="Manutenção em software">
+                    <div class="carousel-caption  d-md-block">
+                        <h2>Buscando manutenção no seu software?</h2>
+                        <p>Nós podemos ajudar a resolver o seu problema!</p>
+                        <a href="#" class="main-btn">entre em contato</a>
+                    </div>  
+                </div>
+              </div>
+              <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="sr-only">Previus</span>     
+              </a>
+              <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>     
+             </a>
+            </div>
+            <!--Sobre-->
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Sobre mim</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="img/agencia.jpg" alt="waslley freixo">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">Uma agência que pensa no futuro</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Nullam convallis sapien dolor. Vivamus id molestie orci, sed fermentum dolor. Cras ut dui gravida.</p> 
+                            <p>Aliquam ullamcorper ipsum at imperdiet sodales.</p>
+                            <p>Nossas expecialidades são:</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i> Lorem ipsum dolor sit consectetur</li>
+                                <li><i class="fas fa-check"></i> Lorem ipsum dolor sit consectetur</li>
+                                <li><i class="fas fa-check"></i> Lorem ipsum dolor sit consectetur</li>
+                                <li><i class="fas fa-check"></i> Lorem ipsum dolor sit consectetur</li>
+                                <li><i class="fas fa-check"></i> Lorem ipsum dolor sit consectetur</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Serviços da empresa-->
+            <div id="services-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossas Especialidades</h3>
+                        </div> 
+                        <div class="col-md-4 service-box">
+                            <i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                            <p>Aprendendo sobre a linguagem de programação Javascript e como ela funciona.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fab fa-node-js"></i>
+                            <h4>Node JS</h4>
+                            <p>Aprendendo o funcionamento e como usar o nodejs.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fab fa-adobe"></i>
+                            <h4>Ferramentas Adobe</h4>
+                            <p>Tenho experiência com ferramentas Adobe como: Photoshop, Illustrator , AdobeXD .</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML</h4>
+                            <p>Aprendendo sobre a linguagem de marcação de hiper-texto HTML e qual sua funcionalidade em aplicações web.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fab fa-css3"></i>
+                            <h4>CSS</h4>
+                            <p>Aprendendo como integrar css com html e como melhorar seu design.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-video"></i>
+                            <h4>Edição de vídeo</h4>
+                            <p>Tenho conhecimento em SonyVegas para edição de vídeos.</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            </div>
+            <!--Dados da empresa-->
+            <div id="data-area">
+                <div class="conteiner">
+                    <div class="row">
+                        <div class="col-md-3 circle-box">
+                            <div id="circleA"></div>
+                                <p>Projetos entregues</p>
+                            </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleB"></div>
+                                <p>Clientes felizes</p>
+                            </div>
+                        <div class="col-md-3 circle-box">
+                             <div id="circleC"></div>
+                                 <p>Colaboradores</p>
+                            </div>
+                        <div class="col-md-3 circle-box">
+                             <div id="circleD"></div>
+                                 <p>Cafézinhos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Nosso time-->
+            <div id="team-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title"> Nosso Time</h3>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card">
+                              <img src="img/profile1.jpg" class="card-img-top" alt="imagem de perfil 1">
+                              <div class="card-body">
+                                  <h5 class="card-title">Mário Gouveia</h5>
+                                  <p class="card-text">Software Developer</p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card">
+                            <img src="img/profile2.jpg" class="card-img-top" alt="imagem de perfil 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Cremilda Silva</h5>
+                                <p class="card-text">Secretária</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">  
+                        <div class="card">
+                            <img src="img/profile3.jpg" class="card-img-top" alt="imagem de perfil 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Joel Josefino</h5>
+                                <p class="card-text">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">  
+                        <div class="card">
+                            <img src="img/profile4.jpg" class="card-img-top" alt="imagem de perfil 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Solange Souza</h5>
+                                <p class="card-text">UX/UI designer</p>
+                            </div>
+                        </div>    
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--Trabalhe conosco-->
+            <div id="apply-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="company-img"></div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
+                            <h4>Gosta de desafios?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar sapien tellus, sed luctus erat pulvinar quis. </p>
+                            <p>Clique no botão abaixo e confira as vagas em aberto.</p>
+                            <p>Aqui você terá a chance de trabalhar com as mehores tecnologias e profissionais do mercado.</p>
+                            <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfólio -->
+            <div id="portfolio-area">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    <h3 class="main-title">Conheça nossos projetos</h3>
+                    </div>
+                    <div class="col-md-12" id="filter-btn-box">
+                    <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                    <button class="main-btn filter-btn" id="dev-btn">Desenvolvimento</button>
+                    <button class="main-btn filter-btn" id="dsg-btn">Design</button>
+                    <button class="main-btn filter-btn" id="seo-btn">SEO</button>
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                    <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                    <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                    <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                    <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                    <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                    <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--Newsletter-->
+            <div id="news-area">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Fique por dentro das novidades</h3>
+                    </div>
+                    <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre desenvolvimento de software</p>
+                    <form action="">
+                        <input type="email" class="form-control" id="email-input" name="email" placeholder="seu e-mail">
+                        <input type="submit" id="news-btn" value="Inscrever">
+                    </form>
+                </div>
+            </div>
+            <!-- Call to action-->
+            <div id="call-area">
+                <div class="container">
+                    <div class="row">
+                        <p>Deseja fazer um orçamento sem compromisso?</p>
+                        <button class="main-btn" id="call-btn">Orçar</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><Span class="contact-title">Ligue para:</Span> (21)00000-0000</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><Span class="contact-title">Envie um e-mail:</Span> contato@contato.com.br</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><Span class="contact-title">Venha nos conhecer:</Span> Av:Teobaldo de Azevedo - Nº 1234 - Dom Casmurro - RJ </p> 
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Nos deixe uma mensagem:</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Escreva sua mensagem" name="message"></textarea>
+                            <input type="submit" class="main-btn">
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://github.com/WaslleyFreixo" target="_blank">Waslley Freixo</a> &copy; 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Script do projeto-->
+    <script src="script.js">
+       
+
+    </script>
+</body>
+</html>
